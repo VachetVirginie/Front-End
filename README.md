@@ -8,3 +8,5 @@ Carte
 ![image](carte.png)
 Effet de pression sur un bouton en CSS
 ![image](bouton.gif)
+Click to copy
+![image](clicktocopy.gif)
