@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script src="https://code.jquery.com/3.1.0/jquery.min.js"></script>
+   
     <title>Document</title>
-    <style>
-        button{
-            padding:15 px 25px;
-            font-size: 24px;
-            text-transform: uppercase;
-            background-color:#3498db;
-            border:none;
-            color:white;
-            border-radius:12px;
-            cursor:pointer;
-            box-shadow:0 9px #2980b9;
-            outline:none;
-        }
-        button:hover{
-            box-shadow: 0 6px #2980b9;
-            transform: translateY(3px);
-        }
-        button:active{
-            box-shadow: 0 2px #2980b9;
-            transform: translateY(7px);
-        }
-    </style>
 </head>
 <body>
-    <button>press me !</button>
+    <h2> Upload de fichier & previsualisation de l'image</h2>
+    <p class="lead"> <b>Just Javascript</b></p>
+    
+    <!-- Upload  -->
+    <form id="file-upload-form" class="uploader">
+      <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+    
+      <label for="file-upload" id="file-drag">
+        <img id="file-image" src="#" alt="Preview" class="hidden">
+        <div id="start">
+          <i class="fa fa-download" aria-hidden="true"></i>
+          <div>Select a file or drag here</div>
+          <div id="notimage" class="hidden">Selectionner une image</div>
+          <span id="file-upload-btn" class="btn btn-primary">Selectionner un fichier</span>
+        </div>
+        <div id="response" class="hidden">
+          <div id="messages"></div>
+          <progress class="progress" id="file-progress" value="0">
+            <span>0</span>%
+          </progress>
+        </div>
+      </label>
+    </form> 
+    <script type="text/javascript" src="monscript.js"></script>
 </body>
 </html>
