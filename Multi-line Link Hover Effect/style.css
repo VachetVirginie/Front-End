@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  a {
+    display: block;
+    width: 250px;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    line-height: 1.5rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  a span {
+    background-image: linear-gradient(to bottom, white 70%, transparent 70%), linear-gradient(to right, #7b7ead 33%, #84a8c1 33%, #84a8c1 66%, #9bccb9 66%);
+    background-size: 306% 100%;
+    background-position: 100% 0;
+    transition: 1s background-position;
+  }
+  a:hover span {
+    background-position: 0%;
+  }
+  
