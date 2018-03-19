@@ -1,0 +1,26 @@
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    margin: 0;
+    z-index: -1;
+  }
+  
+  .overlay-box {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 2.4vw;
+    color: #1a1a1a;
+    color: #d9d9d9;
+    text-align: center;
+    text-shadow: 0 0 10px #000000, 0 0 9px #000000, 0 0 8px #000000, 0 0 5px #000000;
+    height: 250px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
