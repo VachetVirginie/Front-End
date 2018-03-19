@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+:root {
+    --font-osc: 'Open Sans Condensed', sans-serif;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+}
+.bg-image {
+    background: url('aaa.jpg') center bottom;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.knockout-text {
+    position: relative;
+    font-family: var(--font-osc);
+    color: #ffffff;
+    width: 100%;
+    min-height: 100%;
+    mix-blend-mode: multiply;
+    display: flex;
+    align-items: flex-end;
+    font-size: 30vw;
+    margin: 0;
+    overflow: hidden;
+}
+.knockout-text::after {
+    content: '';
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgb(59, 2, 6);
+    transition: all 2s;
+}
+.knockout-text > span {
+    display: inline-block;
+    height:1em;
+    transform: translateX(100vw);
+    transition: transform 8s ease-in-out;
+    white-space: nowrap;
+}
+
+.knockout-text.slide > span {
+    transform: translateX(var(--x));
+}
+.knockout-text.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.knockout-text.end > span {
+    transition: transform 4s ease-in;
+    font-size: 3vw;
+}
+.knockout-text.end::after {
+    background: transparent;
+}
