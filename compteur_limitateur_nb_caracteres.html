@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="PSPad editor, www.pspad.com">
+<title></title>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<style type="text/css">
+body {background:#eee}
+#pge {display:block;width:400px;margin:0 auto;padding:7px;background:#ddd}
+legend {font-size:x-large;font-weight:bold;}
+p {margin:3px;text-align:right;}
+textarea {display:block;width:360px;overflow:hidden;margin:0 auto;}
+.bold {font-weight:bold}
+</style>
+</head>
+<body>
+<div id="pge"><fieldset><legend>Compteur de caracteres en temps réel </legend>
+    <p id="cnt"></p>
+    <textarea id="txa" rows="7">Je vais vous dire trois métamorphoses de l’esprit : comment l’esprit devient chameau, comment le chameau devient lion, et comment enfin le lion devient enfant
+    </textarea>
+</div>
+<script type="text/javascript">
+var maxChr=160; // limite max fixée
+function $(i){return document.getElementById(i)}
+function red(nbrChr){return Math.round(255*Math.pow(0.977,maxChr-nbrChr))}
+function countChr(){
+    var len=$('txa').value.length;
+    if (maxChr<len) {$('txa').value=$('txa').value.substr(0,maxChr);len=maxChr}
+    $('cnt').innerHTML='<span style="color:rgb('+red(len)+',0,0)">'+len+' caractère'+(1<len?'s':'')+'</span> / '+maxChr;
+    if (len<maxChr) $('cnt').className="";else $('cnt').className="bold";
+};
+(function(){
+    $('txa').onkeyup=countChr;
+    countChr();
+})();
+</script>
+</body>
+</html>
