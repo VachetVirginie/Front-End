@@ -1,0 +1,99 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+#integration-list {
+    font-family: 'Open Sans', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+}
+#integration-list ul {
+    padding: 0;
+    margin: 20px 0;
+    color: #555;
+}
+#integration-list ul > li {
+    list-style: none;
+    border-top: 1px solid #ddd;
+    display: block;
+    padding: 15px;
+    overflow: hidden;
+}
+#integration-list ul:last-child {
+    border-bottom: 1px solid #ddd;
+}
+#integration-list ul > li:hover {
+    background: #efefef;
+}
+.expand {
+    display: block;
+    text-decoration: none;
+    color: #555;
+    cursor: pointer;
+}
+h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 400;
+}
+span {
+    font-size: 12.5px;
+}
+#left,#right{
+    display: table;
+}
+#sup{
+    display: table-cell;
+    vertical-align: middle;
+    width: 80%;
+}
+.detail a {
+    text-decoration: none;
+    color: #C0392B;
+    border: 1px solid #C0392B;
+    padding: 6px 10px 5px;
+    font-size: 13px;
+  margin-right: 7px;
+}
+.detail {
+    margin: 10px 0 10px 0px;
+    display: none;
+    line-height: 22px;
+    height: 150px;
+}
+.detail span{
+    margin: 0;
+}
+.right-arrow {
+    margin-top: 12px;
+    margin-left: 20px;
+    width: 10px;
+    height: 100%;
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+.icon {
+    height: 75px;
+    width: 75px;
+    float: left;
+    margin: 0 15px 0 0;
+}
+.london {
+    background: url("http://placehold.it/50x50") top left no-repeat;
+    background-size: cover;
+}
+.newyork {
+    background: url("http://placehold.it/50x50") top left no-repeat;
+    background-size: cover;
+}
+.paris {
+    background: url("http://placehold.it/50x50") top left no-repeat;
+    background-size: cover;
+}
