@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+body {
+    background: #fff;
+    font-family: 'Inconsolata', monospace;
+    font-size: 14px;
+    overflow-x: hidden;
+    -webkit-text-stroke: rgba(255, 255, 255, 0.01) 0.1px;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+a {
+    text-decoration: none;
+    -ms-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+a:focus,
+a:active {
+    outline: medium none;
+    text-decoration: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+img {
+    max-width: 100%, height: auto;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+i,
+em {
+    font-style: italic;
+}
+
+.clear {
+    border: 0;
+    clear: both;
+    height: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: normal;
+    margin: 0;
+}
+
+input,
+textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+section,
+.container {
+    position: relative;
+    height: 100%;
+}
+
+.parallax-window,
+.parallax-window-sec,
+.parallax-window-thr,
+.parallax-window-for,
+.parallax-window-fiv {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-height: 400px;
+    height: 100%;
+    backgrond: transparent;
+}
+
+.text-section {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    width: 50%;
+}
+
+.text-section h1 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.text-section h3 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.text-section ul {
+    margin: 0;
+    padding: 0;
+}
+
+.text-section ul li {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
