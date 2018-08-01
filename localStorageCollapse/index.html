@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="monscript.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="panel panel-default">
+        <div data-toggle="collapse" data-target="#panel1" class="panel-heading collapsed">
+            <h4 class="panel-title">
+                <a> Panel 1 </a>
+            </h4>
+        </div>
+        <div id="panel1" class="panel-collapse collapse">
+            <div class="panel-body">
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="panel panel-default">
+        <div data-toggle="collapse" data-target="#panel2" class="panel-heading collapsed">
+            <h4 class="panel-title">
+                <a> Panel 2 </a>
+            </h4>
+        </div>
+        <div id="panel2" class="panel-collapse collapse">
+            <div class="panel-body">
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="panel panel-default">
+        <div data-toggle="collapse" data-target="#panel3" class="panel-heading collapsed">
+            <h4 class="panel-title">
+                <a> Panel 3 </a>
+            </h4>
+        </div>
+        <div id="panel3" class="panel-collapse collapse">
+            <div class="panel-body">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(".panel .panel-collapse").on('click', '.categoriePortail', function ()
+{     //recupere id de l endroit cliqué
+    var active = $(this).attr('id');
+    
+    //Saving multiple panel's collapsed 
+    var panels= localStorage.panels === undefined ? new Array() : JSON.parse(localStorage.panels);
+    if ($.inArray(active,panels)==-1) //check that the element is not in the array
+        panels.push(active);
+    localStorage.panels=JSON.stringify(panels);
+});
+
+$(".panel .panel-collapse").on('hidden.bs.collapse', function ()
+{
+    //recupere id de l endroit cliqué
+    var active = $(this).attr('id');
+
+    var panels= localStorage.panels === undefined ? new Array() : JSON.parse(localStorage.panels);
+    var elementIndex=$.inArray(active,panels);// stock ds tab
+    if (elementIndex!==-1) //check the array
+    {        
+        panels.splice(elementIndex,1); //remove item from array
+    }
+    localStorage.panels=JSON.stringify(panels); //save array on localStorage
+});
+
+var panels=localStorage.panels === undefined ? new Array() : JSON.parse(localStorage.panels); //get all panels
+    for (var i in panels){ //<-- panel is the name of the cookie
+        if ($("#"+panels[i]).hasClass('panel-collapse')) // check if this is a panel
+        {
+            $("#"+panels[i]).collapse("show");
+        }
+    }
+</script>
+</html>
