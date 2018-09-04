@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0; }
+  
+  html {
+    width: 100%; }
+  
+  body {
+    font-family: "Helvetica Neue", sans-serif; }
+  
+  h2 {
+    font-size: 2.1em;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+ font-family:"aktiv-grotesk";
+ color: #00a562;
+}
+  
+  .part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  
+  .part p {
+    font-weight: 300;
+    font-size: 1em; }
+  
+  .part h2 {
+    margin-bottom: 60px; }
+
+ 
+  
+  header {
+    height: 100vh;
+    background-image: url("https://techcrunch.com/wp-content/uploads/2015/04/macbook-key-depth.jpg?w=600");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 100px; }
+  
+  header h1 {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 3.37em;
+    letter-spacing: 5px;
+    text-align: center;
+    font-family:"aktiv-grotesk";
+    color: #00a562;
+}
+
+  
+/* @font-face{
+    font-family: "Betty typeface";
+	src: url('Betty.otf');
+  } */
+
+  .header-text {
+    margin-top: 50px;
+    text-align: center; }
+  
+  .header-text p {
+    font-size: 1em; }
+  
+  .fa-angle-down {
+    margin-top: 100px;
+    cursor: pointer; }
+  
+  .about {
+    color: #3c3c3c;
+    margin: 130px 0px 130px 0px;
+     }
+  
+  .service {
+    background-image: url("https://images.unsplash.com/photo-1504670073073-6123e39e0754?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=23c233a430f2ca6be8d78f8608b416d5&auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
+    height: 430px;
+    color: #00a562;
+   
+    font-size: 1.2em;
+ }
+  
+  .what-we-do {
+    margin: 100px 0px 200px 0px;
+    color: #3c3c3c; }
+  
+  .what-we-do h2 {
+    margin-bottom: 0px; }
+  
+  .what-we-do h3 {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 30px 0px 30px 0px; }
+  
+  .what-we-do .row {
+    margin-top: 100px; }
+  
+  .work .col {
+    display: flex;
+    justify-content: flex-start; }
+  
+  .work h2 {
+    margin-top: 0;
+    align-self: flex-end;
+    font-size: 2.125em;
+    text-transform: uppercase;
+    padding: 0px 0px 20px 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #00a562; }
+  
+  .work .col {
+    height: 200px;
+    border: 3px solid #333333; }
+  
+  .col:hover {
+    opacity: 0.6;
+    color:#333333
+ }
+  
+  .col-1 {
+    background-image: url("https://raw.githubusercontent.com/Pixeluh/PsdCodePractice/master/Ellipsis/assets/images/work-1.jpg");
+    background-size: cover; }
+  
+  .col-2 {
+    background-image: url("https://raw.githubusercontent.com/Pixeluh/PsdCodePractice/master/Ellipsis/assets/images/work-2.jpg");
+    background-size: cover; }
+  
+  .col-3 {
+    background-image: url("https://raw.githubusercontent.com/Pixeluh/PsdCodePractice/master/Ellipsis/assets/images/work-3.jpg");
+    background-size: cover; }
+  
+  .contact {
+    margin: 130px 0px 50px 0px;
+    color: #3c3c3c; }
+  
+  .btn-default {
+    margin-top: 40px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    height: 55px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: "Helvetica Neue";
+padding: 3px; }
+  
+  .btn-default:hover {
+    background-color: #090909;
+    color: #ffffff; }
+  
+  footer {
+    margin-bottom: 40px; }
+  
+  /*# sourceMappingURL=style.css.map */
+
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+  }
+
+  .content-slide {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+  }
+
+  .content-slide img {
+    width: 70%;
+  }
+
+  .fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent #FF6363 !important;
+    right: 45px !important;
+  }
+
+  .fp-controlArrow.fp-prev {
+    border-color: transparent #FF6363 transparent transparent !important;
+    left: 45px !important;
+  }
+
+  #fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background: rgba(0, 0, 0, 0.62) !important;
+  }

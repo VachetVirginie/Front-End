@@ -1,0 +1,138 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virginie Vachet</title>
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet"  href="styles.css" />
+    <link rel="stylesheet"  href="timeline.css" />
+  </head>
+  <body>
+    <header class="container-fluid">
+            <img src="logo.png" alt="logo" >
+      <h1>Virginie Vachet</h1>
+      <h1></h1>
+      <section class="header-text">
+        <p>Developpeuse Web</p>
+        <p>Fullstack</p>
+       
+      </section>
+      <i class="fa fa-angle-down fa-3x"></i>
+    </header>
+    <section class="container-fluid part about">
+      <h2>A Propos</h2>
+      <p>Développeuse fullstack, passionnée par le monde du web depuis des années,</p>
+      <p>j'ai eu la chance à travers une formation chez Simplon d'entamer une reconversion professionnelle,<p>
+      <p>complétée par un contrat de professionnalisation au sein de l'entreprise Orange et ainsi pouvoir exercer le métier qui me passionne.<p> 
+    </section>
+
+    <section class="container-fluid part service">
+      
+      <h3>"Toujours programmer comme si </h3>
+      <h3>la personne qui va entretenir </h3>
+      <h3>votre code sera un psychopathe </h3>
+      <h3>violent…"</h3>
+    </section>
+
+    <section class="container-fluid part what-we-do">
+      <h2>Formation</h2>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+  
+<!-- The Timeline -->
+
+<ul class="timeline">
+
+	<!-- Item 1 -->
+	<li>
+		<div class="direction-r">
+			<div class="flag-wrapper">
+				<span class="flag">Simplon Lyon</span>
+				<span class="time-wrapper"><span class="time">2017 - present</span></span>
+			</div>
+			<div class="desc">Titre professionnel developpeuse fullstack en alternance au sein de Orange</div>
+		</div>
+	</li>
+  
+	<!-- Item 2 -->
+	<li>
+		<div class="direction-l">
+			<div class="flag-wrapper">
+				<span class="flag">Simplon Lyon</span>
+				<span class="time-wrapper"><span class="time">2017 - 2017</span></span>
+			</div>
+			<div class="desc">Formation developpeuse web fullestack</div>
+		</div>
+	</li>
+
+	<!-- Item 3 -->
+	<li>
+		<div class="direction-r">
+			<div class="flag-wrapper">
+				<span class="flag">BTS Commerce et gestion des unités commerciales</span>
+				<span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+			</div>
+			<div class="desc">BTS Commerce et gestion des unités commerciales ICF Montpellier</div>
+		</div>
+	</li>
+  
+</ul>
+
+    </section>
+
+    <section class="container-fluid work">
+        <h2>Projets</h2>
+      <div class="row">
+        <div class="col col-1 col-md-4 col-sm-4">
+          <h2>Topworkz</h2>
+        </div>
+        <div class="col col-2 col-md-4 col-sm-4">
+          <h2>Joint</h2>
+        </div>
+        <div class="col col-3 col-md-4 col-sm-4">
+          <h2>Market</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-3 col-md-4 col-sm-4">
+          <h2>Worktop</h2>
+        </div>
+        <div class="col col-1 col-md-4 col-sm-4">
+          <h2>Lable</h2>
+        </div>
+        <div class="col col-2 col-md-4 col-sm-4">
+          <h2>Kyiv</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid part contact">
+      <h2>Me contacter</h2>
+      <p>Planning and development are iterative. Because we are constantly coding and</p>
+      <p>testing, the products we build are always ready to go live. This iterative process</p>
+      <p>allows for changes as business requirements evolve.</p>
+      <button class="btn btn-default">Me contacter</button>
+    </section>
+
+    <footer class="part">
+      <p>&copy;2018. All Rights Reservered Waspy</p>
+    </footer>
+  <!-- external javascript -->
+  
+  <script>
+      $(document).ready(function() {
+  $(".fa-angle-down").click(function() {
+    $('html, body').animate({
+      scrollTop: $(".about").offset().top
+    }, 2000)
+  });
+
+  $(".fa-angle-down").effect("bounce", {times: 5, distance: 50}, 2500);
+})
+  </script>
+  </body>
+</html>
