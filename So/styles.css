@@ -1,0 +1,42 @@
+body {
+    background-color: #DBD3C0;
+    margin: 0;
+  }
+  .polaroid {
+    border: 1rem solid #f6f6f3;
+    border-bottom: 5rem solid #f6f6f3;
+    width: 40vw;
+    min-width: 18rem;
+    height: 45vw;
+    min-height: 18rem;
+    box-shadow: 1rem 1rem 1rem -0.5rem rgba(0, 0, 0, 0.54);
+    margin: 4rem auto;
+    text-align: right;
+    position: relative;
+    transition: all 250ms ease;
+  }
+  .polaroid__image {
+    max-width: 100%;
+    margin: 0;
+  }
+  .polaroid__caption {
+    font-family: 'Rock Salt', cursive;
+    padding: 0.5rem;
+  }
+  .polaroid--rotate-right {
+    transform: rotate(3deg);
+  }
+  .polaroid--rotate-left {
+    transform: rotate(-4deg);
+  }
+  .polaroid:hover {
+    top: -1rem;
+    cursor: pointer;
+  }
+  .text{
+      text-align:center;
+      color:black;
+     
+     
+  }
+  
